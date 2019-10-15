@@ -48,7 +48,8 @@ app.post('/sign_up', function (req, res) {
             from: 'rahulsoni112233@outlook.com',
             to: `${data.email}`,
             subject: 'Sending Email using Node.js',
-            text: 'That was easy!'
+            text: `hello mr./mrs ${data.name} welcome to our company thanks for registring with us we develop the best software
+          your email ${data.email} and your pone number is ${data.phone}`
           };
           
          transporter.sendMail(mailOptions, function(error, info){
